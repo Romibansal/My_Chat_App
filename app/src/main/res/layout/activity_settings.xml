@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0D0D"
+    tools:context=".activities.SettingsActivity">
+
+
+    <ImageView
+        android:id="@+id/settingProfileID"
+        android:layout_width="225dp"
+        android:layout_height="191dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/profileimage" />
+
+    <TextView
+        android:id="@+id/settingsDisplayName"
+        android:layout_width="195dp"
+        android:layout_height="29dp"
+        android:text="@string/displayname"
+        android:textColor="#F6F2F2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingProfileID"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/settingStatusText"
+        android:layout_width="255dp"
+        android:layout_height="27dp"
+        android:text="Hi.......I'm on this App"
+        android:textColor="#F3F1F1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsDisplayName"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/settingsChangeImgButton"
+        android:layout_width="177dp"
+        android:layout_height="46dp"
+        android:text="@string/change_Pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingStatusText"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Button
+        android:id="@+id/settingsChangeStatus"
+        android:layout_width="177dp"
+        android:layout_height="46dp"
+        android:text="@string/chnange_status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsChangeImgButton"
+        app:layout_constraintVertical_bias="0.186" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
